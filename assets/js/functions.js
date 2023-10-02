@@ -13,3 +13,7 @@ function nav(){
 nav();
 
 });
+
+
+
+const slides = document.querySelector();
