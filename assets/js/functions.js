@@ -51,4 +51,8 @@ function nextSlide() {
 	Slide(counter);
 }
 
-// showSlide(currentSlide); 
+// SECTION DÉFILEMENT; 
+
+
+
+// SECTION LEAFLET; 
