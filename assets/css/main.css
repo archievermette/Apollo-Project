@@ -1263,10 +1263,23 @@ svg path {
     justify-content: center
 }
 
+ #map { 
+    height: 180px; 
+    width: 600px;
+    /*Trouver une meilleur solution*/
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+  
+    
+    
+} 
+
 #contact .wrapper .blurb {
     max-width: 950px;
     margin-top: -45px;
-    text-align: center
+    text-align: center;
+    
 }
 
 #contact .wrapper .blurb h2 {
