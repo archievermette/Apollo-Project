@@ -456,7 +456,8 @@ svg path {
     opacity: 0;
     z-index: 10;
     -webkit-transition: opacity .3s ease-in-out, visibility 0s .3s;
-    transition: opacity .3s ease-in-out, visibility 0s .3s
+    transition: opacity 6.3s ease-in-out, visibility 0s .3s;
+    
 }
 
 .nav.open {
@@ -505,8 +506,10 @@ svg path {
     font-family: "Raleway", Helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    
     -webkit-transition: background-color .2s ease-in-out;
-    transition: background-color .2s ease-in-out
+    transition: background-color .2s ease-in-out;
+   
 }
 
 .nav li a:hover {
@@ -708,7 +711,8 @@ svg path {
     height: 600px;
     margin: 30px auto;
     background-color: #efefef;
-    overflow: hidden
+    overflow: hidden;
+    transition : opacity .3s ease-in-out;
 }
 
 @media (max-width: 768px) {

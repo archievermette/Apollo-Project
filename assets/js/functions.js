@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 	
+
 function nav(){
 	
 	$('.nav-toggle').click(function(){
@@ -14,6 +15,20 @@ nav();
 
 });
 
+//Défilement
+
+document.querySelectorAll('a[href^="#"]').forEach(ancre => {
+    ancre.addEventListener('click', function (e) {
+        e.preventDefault();
+		const targetElement = document.querySelector(this.getAttribute('href'));
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth' 
+        });
+    });
+});
+
+
 // SECTION SLIDER
 
 const prevBtn = document.querySelector('.icon-chevron-thin-left');
@@ -22,6 +37,13 @@ const ulElement = document.querySelector('.banner');
 const liElements = ulElement.querySelectorAll('li');
 
 let counter = 0;
+
+ nextBtn.addEventListener ('click', 
+  function nextSlide() {
+	  counter = (counter + 1) % liElements.length;
+	  Slide(counter);
+  
+  });
 
 function Slide(index) {
 	liElements.forEach((li, i) => {
@@ -46,16 +68,14 @@ prevBtn.addEventListener ('click',function prevSlide() {
 	  Slide(counter);
   
   });
+ 
+  
 function nextSlide() {
 	counter = (counter + 1) % liElements.length;
 	Slide(counter);
-}
+}  
 
-// SECTION DÉFILEMENT; 
-
-
-
-// SECTION LEAFLET; 
+// SECTION LEAFLET
 
 // Map 
 var map = L.map('map').setView([45.55, -73.56], 12);
