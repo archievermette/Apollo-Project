@@ -1263,17 +1263,23 @@ svg path {
     justify-content: center
 }
 
- #map { 
-    height: 180px; 
-    width: 600px;
-    /*Trouver une meilleur solution*/
-    margin-left: 15rem;
-    margin-bottom: 2rem;
-    margin-top: 10rem;
+/*MAP*****/
+/*
+#map {
+    height: 180px;
+    width: 500px;
+    margin-bottom: 3rem;
+    margin-top: -2.5rem;
+} */
+
+#map {
+    height: 131px;
+    width: 500px;
+    margin-bottom: 3.2rem;
+    margin-top: -1.5rem;
+} 
   
     
-    
-} 
 
 #contact .wrapper .blurb {
     max-width: 950px;
@@ -1284,7 +1290,8 @@ svg path {
 
 #contact .wrapper .blurb h2 {
     margin-top: 0;
-    margin-bottom: 30px;
+   margin-bottom: 30px; 
+  /* margin-bottom: 6px; */
     font-size: 42px;
     font-family: "Raleway", Helvetica, sans-serif;
     font-weight: 100
@@ -1316,9 +1323,11 @@ svg path {
     -ms-flex-pack: justify;
     justify-content: space-between;
     color: #111;
-    font-family: "Raleway", Helvetica, sans-serif
+    font-family: "Raleway", Helvetica, sans-serif;
+   /* margin-top : 2rem; */
+    
 }
-
+#contact > div > form
 #contact .wrapper form input[type="email"],
 #contact .wrapper form input[type="text"] {
     width: 42%;
